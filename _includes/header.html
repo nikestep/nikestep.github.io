@@ -1,5 +1,5 @@
 <head>
-
+  <!-- Google analytics -->
   {% if site.google_analytics %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
     <script>
@@ -9,9 +9,12 @@
       gtag('config', '{{ site.google_analytics }}');
     </script>
   {% endif %}
+
+  <!-- Set charset -->
   <meta charset="UTF-8">
 
   {% seo %}
+  <!-- Additional meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -19,5 +22,4 @@
     
     <!-- My stylesheet -->
     <link rel="stylesheet" href="assets/css/main.css">
-
 </head>
