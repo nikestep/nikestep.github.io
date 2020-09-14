@@ -1,3 +1,7 @@
 theme: jekyll-theme-cayman
 title: Nik Estep Muses
 description: Nik Estep muses about stuffs
+
+sass:
+    sass_dir: _sass
+    style: expanded #compressed
