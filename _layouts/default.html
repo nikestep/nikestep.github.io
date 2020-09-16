@@ -2,7 +2,7 @@
 <html lang="{{ site.lang | default: "en-US" }}">
 
   {% include header.html %}
-  
+
   <body>
 
     {% include navigation.html %}
@@ -21,8 +21,10 @@
 
     <main id="content" class="main-content" role="main">
       {{ content }}
-      
+
       {% include footer.html %}
     </main>
+
+    {% include bootstrap-js.html %}
   </body>
 </html>
