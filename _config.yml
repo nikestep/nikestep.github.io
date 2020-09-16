@@ -5,4 +5,5 @@ description: Nik Estep muses about stuffs
 sass:
     style: expanded #compressed
 
+github: [metadata]
 repository: nikestep/nikestep.github.io
