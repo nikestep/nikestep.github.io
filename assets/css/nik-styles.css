@@ -1,7 +1,15 @@
+/* Navigation */
 .nav-block {
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-item {
 
 }
+
+/* Page layout */
+.small-banner {
+
+}
+
