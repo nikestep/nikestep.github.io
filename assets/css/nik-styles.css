@@ -1,15 +1,4 @@
-/* Navigation */
-.nav-block {
-  display: flex;
-  justify-content: space-between;
+/* Text formatting */
+.right-aligned {
+  text-align: right;
 }
-
-.nav-item {
-
-}
-
-/* Page layout */
-.small-banner {
-
-}
-
