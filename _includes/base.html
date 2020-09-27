@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  {% include header.html %}
+
+  <body>
+    <div class="container-fluid">
+      {% include navigation.html %}
+
+      <!-- Header provided by layout -->
+      {{ include.generated_header }}
+
+      <main id="content" class="main-content" role="main">
+        <div class="row">
+          <div class="col">
+            <!-- Content provided by layout -->
+            {{ include.whole_content }}
+          </div>
+        </div><!-- .row -->
+
+        <!-- Footer has its own columnal formatting -->
+        {% include footer.html %}
+      </main>
+
+      {% include bootstrap-js.html %}
+    </div><!-- .container -->
+  </body>
+</html>
