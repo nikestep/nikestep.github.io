@@ -7,3 +7,6 @@ sass:
 
 github: [metadata]
 repository: nikestep/nikestep.github.io
+
+kramdown:
+    hard_wrap: true
