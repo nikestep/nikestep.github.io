@@ -9,7 +9,11 @@
       </button>
     </h5>
   </div><!-- card-header -->
-  <div id="year-collapse-{{ include.year }}" class="collapse show"
+  {% if include.show }
+    <div id="year-collapse-{{ include.year }}" class="collapse show"
+  {% else }
+    <div id="year-collapse-{{ include.year }}" class="collapse"
+  {% endif }
        aria-labeledby="year-header-{{ include.year }}"
        data-parent="#{{ include.accordion_id }}">
     <div class="card-body">
