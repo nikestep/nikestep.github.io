@@ -10,7 +10,10 @@
   </div>
   <div class="right-aligned">
     {{ page.author }}
-    <span class="italics">({{ page.date }})</span>
+    <span class="italics">
+      <!-- January 1, 2000 -->
+      ({{ page.date | date: "%B %e, %Y" }})
+    </span>
   </div>
 {% endcapture %}
 
