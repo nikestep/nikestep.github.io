@@ -10,3 +10,19 @@ repository: nikestep/nikestep.github.io
 
 kramdown:
     hard_wrap: true
+
+collections_dir: collections
+collections:
+    poems:
+        output: true
+        permalink: /writings/poems/:year/:month/:day/:title
+
+defaults:
+    -
+        scope:
+            path: ""
+            type: "poems"
+        values:
+            layout: "poem"
+            author: "Nik"
+            title: "Untitled"

@@ -1,0 +1,19 @@
+{% capture header %}
+  <header class="page-header" role="banner">
+    <h2 class="project-tagline">{{ page.title }}</h2>
+  </header>
+{% endcapture %}
+
+{% capture attributed_content %}
+  <div>
+    {{ content }}
+  </div>
+  <div class="right-aligned">
+    {{ page.author }}
+    <span class="italics">({{ page.date }})</span>
+  </div>
+{% endcapture %}
+
+{% include base.html
+  generated_header=header
+  whole_content=attributed_content %}

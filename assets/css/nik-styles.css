@@ -2,3 +2,7 @@
 .right-aligned {
   text-align: right;
 }
+
+.italics {
+  font-style: italic;
+}
