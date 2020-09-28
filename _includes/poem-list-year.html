@@ -3,7 +3,7 @@
   <div class="card-header" id="year-header-{{ include.year }}">
     <h5 class="mb-0">
       <button class="btn btn-link" data-toggle="collapse"
-              data-target="year-collapse-{{ include.year }}"
+              data-target="#year-collapse-{{ include.year }}"
               aria-expanded="true" aria-controls="year-collapse-{{ include.year }}">
         {{ include.year }}
       </button>
@@ -15,7 +15,7 @@
     <div id="year-collapse-{{ include.year }}" class="collapse"
   {% endif }
        aria-labeledby="year-header-{{ include.year }}"
-       data-parent="#{{ include.accordion_id }}">
+       data-parent="#{{ include.accordion_id }}"><!-- complete collapse div -->
     <div class="card-body">
       Year is {{ include.year }}
     </div><!-- card-body -->
