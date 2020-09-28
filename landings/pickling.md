@@ -1,6 +1,7 @@
 ---
 title: Pickles
 description: I mean, of course!!
+permalink: /food/pickling
 layout: default
 ---
 
