@@ -1,21 +1,26 @@
 <!-- Data parent set by includer -->
 <div class="card">
-  <div class="card-header" id="year-header-{{ include.year }}">
+  <div id="year-header-{{ include.year }}"
+       class="card-header">
     <h5 class="mb-0">
-      <button class="btn btn-link" data-toggle="collapse"
+      <button class="btn btn-link"
+              data-toggle="collapse"
               data-target="#year-collapse-{{ include.year }}"
-              aria-expanded="true" aria-controls="year-collapse-{{ include.year }}">
+              aria-expanded="true"
+              aria-controls="year-collapse-{{ include.year }}">
         {{ include.year }}
       </button>
     </h5>
   </div><!-- card-header -->
-  {% if include.show }
-    <div id="year-collapse-{{ include.year }}" class="collapse show"
-  {% else }
-    <div id="year-collapse-{{ include.year }}" class="collapse"
-  {% endif }
+  {% capture css_class %}
+    {% if include.show %}
+      show
+    {% endif %}
+  {% endcapture %}
+  <div id="year-collapse-{{ include.year }}"
+       class="collapse {{ css_class }}"
        aria-labeledby="year-header-{{ include.year }}"
-       data-parent="#{{ include.accordion_id }}"><!-- complete collapse div -->
+       data-parent="#{{ include.accordion_id }}">
     <div class="card-body">
       Year is {{ include.year }}
     </div><!-- card-body -->
