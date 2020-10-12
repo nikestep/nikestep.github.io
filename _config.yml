@@ -16,6 +16,9 @@ collections:
     poems:
         output: true
         permalink: /writings/poems/:year/:month/:day/:title
+    pickles:
+        output: true
+        permalink: /food/pickles/:year/:month/:recipe
 
 defaults:
     -
@@ -26,3 +29,11 @@ defaults:
             layout: "poem"
             author: "Nik"
             title: "Untitled"
+    -
+        scope:
+            path: ""
+            type: "pickles"
+        values:
+            layout: "pickle-recipe"
+            salt-solution: "2.5%"
+            pickling-length: "1 week"

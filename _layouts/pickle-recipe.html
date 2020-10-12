@@ -1,0 +1,25 @@
+{% capture header %}
+  <header class="page-header" role="banner">
+    <h2 class="project-tagline">{{ page.recipe }}</h2>
+  </header>
+{% endcapture %}
+
+{% capture recipe_content %}
+  <div>
+    <span class="bold">From</span>: {{ page.date | date: "%B %Y" }}
+  </div><!-- date -->
+  <div>
+    <span class=bold">Salt solution</span>: {{ page.salt-solution }}
+  </div><!-- salt -->
+  <div>
+    <span class="bold">Length</span>: {{ page.pickling-length }}
+  </div><!-- length -->
+  <div>
+    {{ content }}
+  </div><!-- recipe content -->
+{% endcapture %}
+
+{% include base.html
+  generated_header=header
+  whole_content=recipe_content %}
+  
