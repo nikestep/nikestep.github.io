@@ -18,19 +18,17 @@ collections:
         permalink: /food/pickles/:year/:month/:recipe
 
 defaults:
-    -
-        scope:
-            path: ""
-            type: "poems"
-        values:
-            layout: "poem"
-            author: "Nik"
-            title: "Untitled"
-    -
-        scope:
-            path: ""
-            type: "pickles"
-        values:
-            layout: "pickle-recipe"
-            salt-solution: "2.5%"
-            pickling-length: "1 week"
+    - scope:
+        path: ""
+        type: "poems"
+      values:
+        layout: "poem"
+        author: "Nik"
+        title: "Untitled"
+    - scope:
+        path: ""
+        type: "pickles"
+      values:
+        layout: "pickle-recipe"
+        salt-solution: "2.5%"
+        pickling-length: "1 week"
