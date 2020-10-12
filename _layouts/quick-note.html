@@ -1,0 +1,18 @@
+{% capture header %}
+  <header class="page-header" role="banner">
+    <h2 class="project-tagline">{{ page.title }}</h2>
+  </header>
+{% endcapture %}
+
+{% capture dated_content %}
+  <div class="italics">
+    {{ page.date | date: %B %e, %Y }}
+  </div>
+  <div>
+    {{ content }}
+  </div>
+{% endcapture %}
+
+{% include base.html
+  generated_header=header
+  whole_content=dated_content %}

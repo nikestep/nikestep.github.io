@@ -16,6 +16,9 @@ collections:
     pickles:
         output: true
         permalink: /food/pickles/:year/:month/:title
+    notes:
+        output: true
+        permalink: /writings/notes/:year/:month/:day/:title
 
 defaults:
     - scope:
@@ -33,3 +36,9 @@ defaults:
         title: "Untitled"
         salt-solution: "2.5%"
         pickling-length: "1 week"
+    - scope:
+        path: ""
+        type: "notes"
+      values:
+        layout: "quick-note"
+        title: "Untitled"
