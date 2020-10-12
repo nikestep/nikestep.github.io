@@ -1,0 +1,23 @@
+---
+title: Quick notes
+description: The quickest of little thoughts
+permalink: /writings/quick-notes
+layout: default
+---
+
+<h1>The quickest notes</h1>
+
+<p>
+  Here are little notes that I've written from time to time.
+</p>
+
+{% assign ordered_notes = site.notes | sort: "date" %}
+
+<ul>
+  {% for note in ordered_notes %}
+    <li>
+      <a href="{{ note.url }}">{{ note.title }}</a>
+      ({{ note.date | date: "%B %e, %Y" }})
+    </li>
+  {% endfor %}
+</ul>
