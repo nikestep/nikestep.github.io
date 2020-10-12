@@ -1,5 +1,5 @@
 ---
-recipe: Radishes
+title: Pickled Radishes
 date: 2020-10-08
 salt-solution 2.5%
 pickling-length: 10 days

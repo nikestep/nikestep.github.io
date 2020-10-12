@@ -15,7 +15,7 @@ collections:
         permalink: /writings/poems/:year/:month/:day/:title
     pickles:
         output: true
-        permalink: /food/pickles/:year/:month/:recipe
+        permalink: /food/pickles/:year/:month/:title
 
 defaults:
     - scope:
@@ -30,5 +30,6 @@ defaults:
         type: "pickles"
       values:
         layout: "pickle-recipe"
+        title: "Untitled"
         salt-solution: "2.5%"
         pickling-length: "1 week"
