@@ -4,24 +4,24 @@
   {% include header.html %}
 
   <body>
-    <div class="mx-auto px-2">
+    <!--<div class="mx-auto px-2">-->
       {% include navigation.html %}
 
       <!-- Header provided by layout -->
       {{ include.generated_header }}
 
       <main id="content" class="main-content" role="main">
-        <div class="row">
-          <div class="col">
+        <!--<div class="row">
+          <div class="col">-->
             <!-- Content provided by layout -->
             {{ include.whole_content }}
-          </div>
-        </div><!-- .row -->
+          <!--</div>
+        <!--</div>--><!-- .row -->
 
         <!-- Footer has its own columnal formatting -->
-        {% include footer.html %}
+        <!--{% include footer.html %}-->
       </main>
-    </div><!-- .mx-auto -->
+    <!--</div>--><!-- .mx-auto -->
 
     <!-- Final block of code has to be Bootstrap JS -->
     {% include bootstrap-js.html %}
